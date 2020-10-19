@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Guide utilisateur</title>
+  </head>
+  <body>
+    <header>
+    	<div class="navbar">
+    		<div class="container d-flex justify-content-between">
+    			<a href="index.html" class="navbar-brand d-flex align-items-center">
+    				<img src="images/logo.jpg">
+    			</a>
+    			<a href="index.html" class="d-flex align-items-center">
+    				<img src="images/logo-ompic.png">
+    			</a>
+    		</div>
+    	</div>
+    </header>
+
+    <h1 id="title" class="text-center">Guide utilisateur</h1>
+
+    <div id="wrapper">
+    	<div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="nav nav-pills justify-content-around" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="demandeur">
+                            <a class="nav-link" id="pills-demandeur-tab" data-toggle="pill" href="#demandeur" role="tab" aria-controls="pills-demandeur" aria-selected="false">Demandeur - Nom commercial</a>
+                        </li>
+
+                        <li class="nav-item" role="examinateur">
+                            <a class="nav-link active" id="pills-examinateur-tab" data-toggle="pill" href="#examinateur" role="tab" aria-controls="pills-examinateur" aria-selected="true">Examinateur</a>
+                        </li>
+
+                        <li class="nav-item" role="controleur">
+                            <a class="nav-link" id="pills-controleur-tab" data-toggle="pill" href="#controleur" role="tab" aria-controls="pills-controleur" aria-selected="false">Contrôleur</a>
+                        </li>
+
+                        <li class="nav-item" role="responsable">
+                            <a class="nav-link" id="pills-responsable-tab" data-toggle="pill" href="#responsable" role="tab" aria-controls="pills-responsable" aria-selected="false">Responsable</a>
+                        </li>
+                    </ul>
+
+
+                    <div class="tab-content" id="pills-tabContent">
+                        
+                        <div class="tab-pane fade show active" id="examinateur" role="tabpanel" aria-labelledby="pills-examinateur-tab">
+                            <iframe src="examinateur/genially.html"></iframe>
+                        </div>
+                        
+                        <div class="tab-pane fade" id="demandeur" role="tabpanel" aria-labelledby="pills-demandeur-tab">
+                            <iframe src="demandeur/genially.html"></iframe>
+                        </div>
+                        
+                        <div class="tab-pane fade" id="responsable" role="tabpanel" aria-labelledby="pills-responsable-tab">
+                            <iframe src="responsable/genially.html"></iframe>
+                        </div>
+                        
+                        <div class="tab-pane fade" id="controleur" role="tabpanel" aria-labelledby="pills-controleur-tab">
+                            <iframe src="controleur/genially.html"></iframe>
+                        </div>
+                    </div>
+        		</div>
+            </div>
+    	</div>
+    </div>
+
+    <footer>
+    	<div class="container">
+    		<div class="row">
+	    		<div class="col-6 text-left">
+	    			&copy; 2020 - Office Marocain de la Propriété Industrielle et Commerciale
+		    	</div> 
+		    	<div class="col-6 text-right">
+		    		Conditions générales d'utilisation
+		    	</div>
+	    	</div>
+    	</div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        $(function(){
+          var hash = window.location.hash;
+          hash && $('#pills-tab a[href="' + hash + '"]').tab('show');
+
+          $('#pills-tab a').click(function (e) {
+            $(this).tab('show');
+            var scrollmem = $('body').scrollTop();
+            window.location.hash = this.hash;
+            $('html,body').scrollTop(scrollmem);
+          });
+        });
+    </script>
+
+    
+  </body>
+</html>

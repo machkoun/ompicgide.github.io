@@ -1,0 +1,168 @@
+@font-face {
+    font-family: 'Rajdhani';
+    src: url('../fonts/Rajdhani-Regular.woff2') format('woff2'),
+        url('../fonts/Rajdhani-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rajdhani';
+    src: url('../fonts/Rajdhani-Light.woff2') format('woff2'),
+        url('../fonts/Rajdhani-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rajdhani';
+    src: url('../fonts/Rajdhani-Medium.woff2') format('woff2'),
+        url('../fonts/Rajdhani-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rajdhani';
+    src: url('../fonts/Rajdhani-Bold.woff2') format('woff2'),
+        url('../fonts/Rajdhani-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rajdhani';
+    src: url('../fonts/Rajdhani-SemiBold.woff2') format('woff2'),
+        url('../fonts/Rajdhani-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+body{
+    font-family: 'Rajdhani';
+    font-weight: normal;
+}
+
+#title{
+	background: #004378;
+	color: #fff;
+	font-size: 1.875rem;
+	font-weight: 600;
+	padding: 15px 15px;
+	margin: 0;
+}
+#wrapper{
+	background: #e5f1f8;
+	padding-top: 45px;
+	padding-bottom: 45px;
+}
+#wrapper > .container{
+	background: #fff;
+	padding-top: 45px;
+	padding-bottom: 45px;
+}
+#wrapper > .container h2{
+	font-size: 1.75rem;
+	font-weight: bold;
+	color: #004378;
+    padding-bottom: 20px;
+    margin-bottom: 22px;
+    line-height: 35px;
+    background: url(../images/separateur-bleu.png) no-repeat 0 100%;
+}
+
+.guides .guide{
+	margin-bottom: 40px;
+	position: relative;
+}
+.guides .guide a{
+	display: block;
+}
+.guides .guide .title{
+	position: absolute;
+	top: 50%;
+	left: 40px;
+	transform: translateY(-50%);
+	font-size: 1.25rem;
+	color: #fff;
+	font-weight: 600;
+}
+.guides .guide .bg img{
+	width: 100%;
+}
+
+#pills-tabContent iframe{
+	border: 7px solid #dbeaec;
+	border-radius: 4px;
+	width: 100%;
+	height: 315px;
+}
+@media (min-width: 576px){
+	#pills-tabContent iframe{
+		height: 293px;
+	}
+}
+@media (min-width: 768px){
+	#pills-tabContent iframe{
+		height: 395px;
+	}
+}
+@media (min-width: 992px){
+	#pills-tabContent iframe{
+		height: 530px;
+	}
+}
+@media (min-width: 1200px){
+	#pills-tabContent iframe{
+		height: 630px;
+	}
+}
+
+
+.nav-pills{
+	border-bottom: 1px solid #e9eaec;
+	margin-bottom: 40px;
+}
+.nav-pills .nav-link {
+    color: #012f5a;
+    font-weight: 600;
+    font-size: 1.125rem;
+    padding-left: 27px;
+    padding-right: 0;
+    padding-bottom: 10px;
+    background: url(../images/tabs-icon.png) left 11px no-repeat;
+    position: relative;
+}
+.nav-pills .nav-link.active {
+    color: #a3abb7;
+    background: url(../images/tabs-icon-active.png) left 11px no-repeat;
+}
+.nav-pills .nav-link.active::after {
+    content: '';
+    width: 100%;
+    height: 5px;
+    background: #c4bd4f;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.tab-pane p{
+	color: #004378;
+}
+
+
+
+footer{
+	background: #004378;
+	font-size: 1rem;
+    color: #fff;
+    font-weight: 500;
+    padding: 15px 0;
+}
